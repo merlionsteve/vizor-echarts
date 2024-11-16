@@ -191,6 +191,7 @@ window.vizorECharts = {
 
 		// hide the loading animation immediately
 		chart.hideLoading();
+		window.addEventListener('resize', myChart.resize);
 	},
 
 	updateChart: async function (id, chartOptions, mapOptions, fetchOptions) {
